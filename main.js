@@ -3,7 +3,7 @@
 
   var app = document.querySelector('#app');
   app.firebaseURL = 'https://sakitest.firebaseio.com';
-  app.firebaseProvider = 'google';
+  app.firebaseProvider = 'anonymous';
   
   app.onFirebaseError = function(event) {
     this.$.errorToast.text = event.detail.message;
